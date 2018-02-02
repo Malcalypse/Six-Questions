@@ -86,13 +86,31 @@ if(questionFiveCon === "Radiohead") {
 	alert("Right. I may or may not have heard of " + questionFiveCon + ". My coding skills aren't quite good enough to determine that. I mean -- I know a lot of bands.");
 }
 
+questionSix();
 
+function playQuestionSix() {
+	questionSix();
+}
 
+function questionSix() {
+	let questionSix = prompt("How many people live in Doha?");
+	if (isNaN(questionSix) == true) {
+		alert("Numbers only, please. Also, no commas. Just throw the full number in. Yep -- I can't fix that.");
+		playQuestionSix();
+	} else {
+		if (questionSix > 2600000) {
+			alert("Nope. Try lower.");
+			playQuestionSix();
+		} else if (questionSix < 2600000) {
+			alert("Not quite -- try higher");
+			playQuestionSix();
+		} else {
+			alert("Yeah! Not quite what we remembered, right?");
+}
+}
+}
 
-//let questionSix = prompt("How many people live in Doha?");
-
-
-
+alert("That's it. Thanks for playing Six Questions!");
 
 
 
