@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+let questionOne = prompt("What's your name?");
+
+let questionOneCased = questionOne.toLowerCase();
+let questionOneGetFirst = questionOne[0].toUpperCase();
+let questionOneCon = questionOneCased.replace(questionOneCased[0], questionOneGetFirst);
+
+if (questionOneCon === "Gabriel") {
+	alert("No way! My name's " + questionOneCon + 
+	", too!");
+} else {
+	alert("Hi " + questionOneCon + "!");
+}
+
+
+
+let questionTwo = prompt("What is your favourite colour?");
+
+let questionTwoCased = questionTwo.toLowerCase();
+let questionTwoGetFirst = questionTwo[0].toUpperCase();
+let questionTwoCon = questionTwoCased.replace(questionTwoCased[0], questionTwoGetFirst);
+
+if (questionTwoCased === "black") {
+	alert("Me too. BLACK IS BEST YES!");
+} else {
+	alert("Fuck " + questionTwoCased + ". " + questionTwoCon + " sucks!");
+}
+
+
+let questionThree = prompt("Where are you from?");
+
+let questionThreeCased = questionThree.toLowerCase();
+let questionThreeGetFirst = questionThree[0].toUpperCase();
+let questionThreeCon = questionThreeCased.replace(questionThreeCased[0], questionThreeGetFirst);
+
+if (questionThreeCon === "Brighton") {
+	alert("Me too! I'm kind of from Brighton.");
+} else {
+	alert("OK. Hello again, " + questionOneCon + " from " + questionThreeCon);
+}
+
+
+
+questionFour();
+
+function playQuestionFour() {
+	questionFour();
+}
+
+function questionFour() {
+	let questionFour = prompt("How old are you?");
+	if (isNaN(questionFour) == true) {
+		alert("Numbers only, please");
+		playQuestionFour();
+	} else {
+		if (questionFour == 36) {
+			alert("No way! I'm 36, too!");
+		} else if (questionFour < 36) {
+			alert("Your whole life ahead of you! Bastard.");
+		} else {
+			alert("Fuck, you're old");
+		}
+	}
+}
+
+
+
+
+let questionFive = prompt("What's your favourite band?");
+
+let questionFiveCased = questionFive.toLowerCase();
+let questionFiveGetFirst = questionFive[0].toUpperCase();
+let questionFiveCon = questionFiveCased.replace(questionFiveCased[0], questionFiveGetFirst);
+
+if(questionFiveCon === "Radiohead") {
+	alert("Yep. Correct answer! -- although is it really? I mean -- everyone's favourite band just keeps changing all the time. I suppose you said Radiohead because that's, like, the constant one in your life? Is for me. Chips?");
+	} else { 
+	alert("Right. I may or may not have heard of " + questionFiveCon + ". My coding skills aren't quite good enough to determine that. I mean -- I know a lot of bands.");
+}
+
+
+
+
+//let questionSix = prompt("How many people live in Doha?");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
